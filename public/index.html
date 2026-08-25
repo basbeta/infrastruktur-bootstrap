@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Det virker</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f6f1e6;
+      color: #201b14;
+      font-family: Georgia, 'Times New Roman', serif;
+      line-height: 1.7;
+      padding: 24px;
+    }
+    main {
+      max-width: 560px;
+    }
+    .eyebrow {
+      font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #8a6a37;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 16px;
+      color: #6b6152;
+      margin-bottom: 14px;
+    }
+    code {
+      background: rgba(138,106,55,0.1);
+      color: #201b14;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">basbeta.no</p>
+    <h1>Det virker.</h1>
+    <p>Denne siden kommer fra <code>basbeta-bootstrap</code>. Ser du dette i nettleseren, betyr det at Coolify bygger og deployer prosjektet riktig, med domene og SSL på plass.</p>
+    <p>Nå kan du bytte ut denne siden (<code>public/index.html</code>) og resten av oppsettet med det faktiske prosjektet.</p>
+  </main>
+</body>
+</html>
