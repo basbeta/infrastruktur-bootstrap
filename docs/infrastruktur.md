@@ -19,6 +19,7 @@ Alt kjører selvhostet på Hetzner-servere i Falkenstein, Tyskland, driftet gjen
 | --- | --- | --- | --- |
 | Coolify | Deploy fra GitHub til kjørende app: bygging, miljøvariabler, domener, SSL | Koble repoet til et Coolify-prosjekt | Vercel, Netlify, Heroku, Render, Railway |
 | PostgreSQL | Egen SQL-database per prosjekt | Opprett database i Coolify, koble til med tilkoblingsstreng | Supabase, Firebase, PlanetScale, Neon |
+| Redis | Caching, sesjoner, køer (f.eks. BullMQ) og rate limiting | Opprett Redis i Coolify, koble til med tilkoblingsstreng | Upstash, Redis Cloud, AWS ElastiCache |
 | S3-kompatibel objektlagring | Fillagring (bilder, PDF-er, video, opplastinger) hos Hetzner | Koble appen mot bucket med tilgangsnøkler i Coolify | Amazon S3, Google Cloud Storage, Cloudflare R2 |
 | Backup | Automatisk backup av database og objektlagring | Velg bucket, frekvens og lagringstid i Coolify | Managed backup-tjenester |
 | Brevo (evt. IDA) | Transaksjonell e-post (velkomst, passordreset, varsler) | SMTP-innstillinger i appen | SendGrid, Mailchimp, Mailgun |
