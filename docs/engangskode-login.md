@@ -40,7 +40,7 @@ Hanko passer fortsatt hvis dere trenger passkeys eller 2FA. For ren e-postkode e
 - **Ulik sesjonslengde per brukertype er enkelt** når utløpet settes ved innlogging (sider: 10 t for bas.no, 2 t for kunder).
 - **Tilgangsregler skal sjekkes på hver forespørsel** mot gjeldende regler, ikke caches i sesjonen. Da virker endringer med en gang for de som allerede er innlogget.
 - **Rate limiting i minnet er nok** for én instans i beta, men nullstilles ved restart/deploy. Trenger du mer, bruk Redis (finnes i Coolify).
-- **Gamle koder slettes ikke av seg selv.** Legg til en timejobb som sletter `OtpCode` som er utløpt eller brukt (sider har en slik jobb for sider, men ikke for koder ennå).
+- **Gamle koder slettes ikke av seg selv.** Legg til en timejobb som sletter `OtpCode` med `expiresAt` i fortiden (sider: `purgeExpiredOtpCodes` i `lib/otp.ts`, kalt fra `instrumentation.ts` ved oppstart og hver time).
 - **Test utløp uten å vente.** Sider brukte midlertidig en testknapp og kortere intervall. Fjern den igjen før commit.
 - **Ikke lekk om en konto finnes.** Svar likt uansett, med mindre appen bevisst skal si «ingen tilgang» (som sider gjør, fordi tilgang styres av domeneliste).
 
