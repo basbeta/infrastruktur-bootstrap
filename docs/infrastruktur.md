@@ -25,7 +25,8 @@ Alt kjører selvhostet på Hetzner-servere i Falkenstein, Tyskland, driftet gjen
 | Brevo (evt. IDA) | Transaksjonell e-post (velkomst, passordreset, varsler) | SMTP-innstillinger i appen | SendGrid, Mailchimp, Mailgun |
 | Bugsink | Feilsporing med stack trace og kontekst (`errors.basbeta.no`) | Legg til SDK i koden | Sentry |
 | Uptime Kuma | Oppetidsovervåking og offentlig statusside (`status.basbeta.no`) | Legg til URL-er som skal overvåkes | Pingdom, Better Uptime, Statuspage |
-| Hanko | Selvhostet autentisering: innlogging, passkeys, 2FA | Koble appen mot Hanko via API | Auth0, Clerk, Supabase Auth, Firebase Auth |
+| Hanko | Selvhostet autentisering: passkeys, 2FA. **Ikke egnet for enkel e-postkode-login**, se `docs/engangskode-login.md` | Koble appen mot Hanko via API | Auth0, Clerk, Supabase Auth, Firebase Auth |
+| Egen engangskode-login | E-post + kode uten passord, bygget i appen med Postgres + Brevo | Følg `docs/engangskode-login.md` | Auth0, Clerk, Supabase Auth, Firebase Auth |
 
 ## Kan enkelt settes opp ved behov (dokumentert på Coolify)
 

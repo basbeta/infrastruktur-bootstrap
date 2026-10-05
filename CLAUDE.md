@@ -27,6 +27,8 @@ Når du skal legge til noe som krever database, fillagring, autentisering, e-pos
    Si tydelig ifra når et forslag flytter data ut av vår egen infrastruktur, og hvorfor du foreslår det likevel.
 5. Er du usikker på hva som passer best: spør brukeren i stedet for å anta.
 
+Trenger prosjektet innlogging med e-post og engangskode: bygg det selv etter `docs/engangskode-login.md`, ikke foreslå Hanko for dette. Hanko ble testet og passer ikke til enkel kode-login.
+
 ## Hold det enkelt og billig i tokens
 
 - Dette er et beta-/eksperimentmiljø, ikke bas.no i produksjon. Ikke bygg tyngre enn oppgaven krever.
